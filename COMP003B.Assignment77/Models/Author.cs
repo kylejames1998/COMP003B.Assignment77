@@ -11,5 +11,7 @@ namespace COMP003B.Assignment77.Models
 
         // Collection navigation property
         public virtual ICollection<BookAuthor>? BookAuthors { get; set; }
+
+        public int BookCount { get; set; } // new property
     }
 }
