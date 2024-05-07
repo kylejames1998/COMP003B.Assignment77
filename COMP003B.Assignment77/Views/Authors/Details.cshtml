@@ -24,6 +24,17 @@
         </dd>
     </dl>
 </div>
+
+<div class="col-md-4">
+    <h4>Authors</h4>
+    <ul>
+        @foreach (Author author in ViewBag.Courses)
+        {
+            <li>@author.AuthorName</li>
+        }
+    </ul>
+</div>
+
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.AuthorId">Edit</a> |
     <a asp-action="Index">Back to List</a>
