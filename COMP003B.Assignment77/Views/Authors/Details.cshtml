@@ -28,9 +28,9 @@
 <div class="col-md-4">
     <h4>Authors</h4>
     <ul>
-        @foreach (Author author in ViewBag.Courses)
+        @foreach (Book book in ViewBag.Book)
         {
-            <li>@author.AuthorName</li>
+            <li>@book.BookName</li>
         }
     </ul>
 </div>
